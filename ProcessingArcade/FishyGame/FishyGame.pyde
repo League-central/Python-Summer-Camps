@@ -17,7 +17,7 @@ def setup():
     #    bg = loadImage("underwater_bg4.jpg")
 
     
-    # 3. Use bg's resize(wdith, height) method to set the background to the entire screen
+    # 3. Use bg's resize(width, height) method to set the background to the entire screen
 
     # 4. Initialize the 'fish' variable using the create_red_fish(x, y) function
     #    fish = create_red_fish(width/2, height/2) # places the fish in the center of the window 
