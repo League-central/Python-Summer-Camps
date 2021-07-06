@@ -47,7 +47,7 @@ def draw():
     # 12. Use the spawn_sharks() function to create sharks
     
     # 13. Use the move_sharks() function to move the sharks
-    # The sharks won't appear yet. They have to drawn first.
+    # The sharks won't appear yet. They have to be drawn first.
 
     # 14. Use a for loop through all the sharks in the 'sharks' list 
     
