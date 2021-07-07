@@ -17,7 +17,7 @@ def setup():
     #    bg = loadImage("underwater_bg4.jpg")
 
     
-    # 3. Use bg's resize(wdith, height) method to set the background to the entire screen
+    # 3. Use bg's resize(width, height) method to set the background to the entire screen
 
     # 4. Initialize the 'fish' variable using the create_red_fish(x, y) function
     #    fish = create_red_fish(width/2, height/2) # places the fish in the center of the window 
@@ -47,7 +47,7 @@ def draw():
     # 12. Use the spawn_sharks() function to create sharks
     
     # 13. Use the move_sharks() function to move the sharks
-    # The sharks won't appear yet. They have to drawn first.
+    # The sharks won't appear yet. They have to be drawn first.
 
     # 14. Use a for loop through all the sharks in the 'sharks' list 
     
