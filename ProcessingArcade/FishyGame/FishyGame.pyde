@@ -15,9 +15,9 @@ def setup():
     #    bg = loadImage("underwater_bg2.jpg")
     #    bg = loadImage("underwater_bg3.jpg")
     #    bg = loadImage("underwater_bg4.jpg")
-    bg = loadImage("underwater_bg1.jpg")
+    bg = loadImage("underwater_bg4.jpg")
     
-    # 3. Use bg's resize(wdith, height) method to set the background to the entire screen
+    # 3. Use bg's resize(width, height) method to set the background to the entire screen
     bg.resize(width, height)
 
     # 4. Initialize the 'fish' variable using the create_red_fish(x, y) function
@@ -82,7 +82,7 @@ def draw():
     spawn_anchovies()
     
     # 20. Use the move_anchovies() function to move the anchovies
-    # The anchovies won't appear yet. They have to drawn first.
+    # The anchovies won't appear yet. They have to be drawn first.
     move_anchovies()
     
     # 21. Use a for loop through all the anchovies in the 'anchovies' list

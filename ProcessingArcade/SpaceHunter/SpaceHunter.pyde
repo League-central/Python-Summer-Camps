@@ -25,7 +25,7 @@ def setup():
     # 6. Initialize the 'shots' variable to a list()
     shots = list()
     
-    # 7. UInitialize the 'crosshair' variable for the crosshair image
+    # 7. Initialize the 'crosshair' variable for the crosshair image
     #    crosshair = loadImage("crosshair1.png") 
     crosshair = loadImage("crosshair2.png")
     
