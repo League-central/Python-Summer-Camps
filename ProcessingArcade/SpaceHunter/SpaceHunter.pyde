@@ -46,7 +46,7 @@ def draw():
     if display_intro():
         return
     
-    # 10. Use the image(bg, width/2, heigh/2) function to display the background
+    # 10. Use the image(bg, width/2, height/2) function to display the background
     # Do you see the background when you run the code?
 
     

@@ -5,17 +5,18 @@ from Ball import Ball
 from Paddle import Paddle
 
 def setup():
-    global started
+    global started, score
     started = False
+    score = 0
     
     # 1. Set the size of your window to at least width = 800, height = 600
-    #size(800,600)
+    #size(800, 600)
     
     # 2. Make a global ball variable
     #global ball
     
     # 3. Initialize your ball variable to a new Ball(x)
-    #ball = Ball(width/2)
+    #ball = Ball(width / 2)
     
     # 4. Make a global paddle variable
     
@@ -23,6 +24,7 @@ def setup():
 
     
 def draw():
+    global score
     if not started:
         textSize(32)
         fill(0)
@@ -33,11 +35,14 @@ def draw():
     #    background(0) will set a classic black background
     #    Do you see your background color?
 
+
     # 7. Call the ball object's update() and draw() methods.
     #    Do you see the ball moving on the screen?
 
+
     # 8. Call the paddle object's update() and draw() methods.
     #    Do you see the paddle on the screen?
+
 
     # 9. Finish the code in keyPressed() and keyReleased() first!
     
@@ -51,6 +56,8 @@ def draw():
 
     # 14. Figure out how to add a score to the game so every bounce off
     #     the paddle increases the player socre
+    #     *HINT* use an if statement when checking the ball's collison
+    #            with the paddle
 
     # *EXTRA*
     # Can you figure out how to make a 2 player pong game with paddles on
