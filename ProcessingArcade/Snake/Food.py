@@ -15,6 +15,12 @@ class Food:
             self.x = int(random(width / Food.size) * Food.size)
             self.y = int(random(height / Food.size) * Food.size)
             
+            if self.x + self.size > width:
+                continue
+            
+            if self.y + self.size > height:
+                continue
+            
             if snake_head is not None:
                 if collision( snake_head, food ):
                     continue
