@@ -3,38 +3,28 @@ def setup():
     global bg, firework
     
     # 1. Use the size(width, height) function to set the size of your program
-    size(1200, 800)
 
     # 2. Use the loadImage() function to initialize the 'bg' variable
     #bg = loadImage('sanDiego.jpg')
     #bg = loadImage('futureCity.jpg')
-    bg = loadImage('space.jpg')
+    #bg = loadImage('space.jpg')
     
     # 3. Use the bg variable's resize(width, height) to set the background image
     # to the size of your program
-    bg.resize(width, height)
     
     # 4. Initialize the 'firework' variable to a Firework(x, y)
     # You can choose the values for x and y
-    firework = Firework(width/2, height/2)
-
-    global fireworks
-    fireworks = list()
-    fireworks.append(firework)
     
 
 def draw():
     global firework
     
     # 5. Call the image(bg, 0, 0) function to display your background  
-    image(bg, 0, 0)
     
     # 6. Call tint(255, 50)
-    tint(255, 50)
     
     # 7. Call the firework variable's draw() method 
     # Do you see the firework when you run the program?
-    firework.draw()
     
     # 8. Use an 'if' statement and the mousePressed variable to check if the
     # the mouse is pressed
@@ -43,28 +33,18 @@ def draw():
         # 9. Set the 'firework' variable to a new Firework at mouseX and mouseY
         # Do you see the firework when the mouse is pressed?
         #firework = Firework(mouseX, mouseY)
-        firework = Firework(mouseX, mouseY)
         
         # Customize your firework using the firework methods below:
+        #set_color(color(255,0,0))    # red firework
         #set_multi_colored_firework()
         #set_firework_size(min_size, max_size)
         #set_sparkle(True)
-        
-        #firework.set_color(color(255,0,0))
-        firework.set_multi_colored_firework()
-        firework.set_firework_size(3, 6)
-        firework.set_sparkle(True)
-        
         
         #set_sound("arcade_explode2.mp3")
         # other sounds to choose from:
         #   arcade_explode1.mp3, arcade_explode2.mp3, arcade_explode3.mp3 
         #   arcade_bomb1.mp3, arcade_bomb2.mp3, arcade_bomb3.mp3
         #   airHorn1.mp3, airHorn2.mp3
-        firework.set_sound("arcade_explode3.mp3")
-        
-        fireworks.append(firework)
-
 
 
 
